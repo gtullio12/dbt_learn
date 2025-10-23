@@ -1,7 +1,7 @@
 select
-    id as order_id,
-    user_id as customer_id,
-    order_date,
-    status
+    ID as order_id,
+    USER_ID as customer_id,
+    ORDER_DATE,
+    STATUS
 
-from raw.jaffle_shop.orders;
+from {{source('raw', 'JAFFLE_SHOP_ORDERS')}};

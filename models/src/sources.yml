@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: JAFFLE_SHOP       
+    schema: PUBLIC     
+    tables:
+      - name: JAFFLE_SHOP_CUSTOMERS
+      - name: JAFFLE_SHOP_ORDERS   
+      - name: STRIPE_PAYMENTS
